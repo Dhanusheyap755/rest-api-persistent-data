@@ -1,0 +1,29 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "examples": {
+    "list": "GET /api/internships?page=1&limit=5",
+    "detail": "GET /api/internships/1",
+    "search": "GET /api/internships?search=developer",
+    "create": {
+      "method": "POST",
+      "path": "/api/internships",
+      "body": {
+        "title": "Java Developer Intern",
+        "company": "CodeWorks",
+        "location": "Chennai",
+        "mode": "Online",
+        "duration": "3 months",
+        "skills": ["Java", "SQL", "Git"],
+        "description": "Work on backend applications and APIs."
+      }
+    },
+    "update": {
+      "method": "PUT",
+      "path": "/api/internships/1",
+      "body": {
+        "duration": "4 months"
+      }
+    },
+    "delete": "DELETE /api/internships/1"
+  }
+}
